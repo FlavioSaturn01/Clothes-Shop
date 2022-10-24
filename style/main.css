@@ -1,0 +1,143 @@
+/* GENERICO */ 
+* {
+    box-sizing: border-box;
+}
+body {
+   font-size: 22px;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p {
+    color: white;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+/* HEADER */ 
+header {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.55);
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header h1 {
+    color: black;
+    font-size: 40px;
+}
+/* MAIN */
+.t-shirt :hover {
+    opacity: .8;
+    transition-duration: 0.5s;
+}
+.jeans :hover {
+    opacity: .7;
+    transition-duration: 0.5s;
+}
+#image {
+    width: 100%;
+    height: auto;
+    background-image: url("../image/sfondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#sfondo-t {
+    width: 100%;
+    height: auto;
+    background-image: url("../image/sfondo\ t-shirt.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.sconto {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.sconto p {
+    border-top: 2px #b3b300 solid;
+    border-bottom: 2px #b3b300 solid;
+    text-transform: uppercase;
+}
+.vestiti {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.t-shirt {
+    padding: 8px 16px;
+    position: relative;
+
+}
+.t-shirt h3 {
+    color: white;
+    border-bottom: 2px #b3b300 solid;
+    margin-bottom: -15px;
+}
+.bol  {
+    position: absolute;
+    top: 0px;
+}
+.jeans {
+    padding: 8px 16px;
+}
+.jeans h3 {
+    color: white;
+    border-bottom: 2px #b3b300 solid;
+    margin-bottom: -15px;
+}
+/* FOOTER */ 
+.contatti {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-top: 2px #b3b300 solid;
+    border-bottom: 2px #b3b300 solid;
+    margin: 30px 90px;
+}
+
+/* MAIN T-SHIRT */
+.mini img {
+    padding: 5px;
+}
+.maglia {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+}
+.maglia img {
+    margin: 100px;
+    border: 3px #b3b300 solid;
+    padding: 15px;
+}
+.descri {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 15px 100px 15px 15px;
+    border-left: 2px #b3b300 solid;
+}
+.descri p {
+    padding-left: 15px;
+   
+}
+.prezzo {
+    text-decoration: line-through;
+    text-decoration-color: #b3b300;
+}
+/*DISPOSITIVI */ 
+
+@media only screen and (max-width: 425px) {
+    .maglia img {
+        margin: 15px;
+        border: 2px #b3b300 solid;
+        padding: 12px;
+        height: auto;
+    }
+    .descri {
+        font-size: 19px;
+    }
+}
